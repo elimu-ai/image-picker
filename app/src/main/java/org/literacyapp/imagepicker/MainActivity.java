@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         ContentProvider.initializeDb(this);
+
+        List<Word> words = ContentProvider.getAllWords();
+        Log.i(getClass().getName(), "words.size(): " + words.size());
     }
 
     @Override
