@@ -10,6 +10,11 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import org.literacyapp.contentprovider.ContentProvider;
+import org.literacyapp.contentprovider.model.content.Word;
+
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int PERMISSION_REQUEST_READ_EXTERNAL_STORAGE = 0;
@@ -32,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, PERMISSION_REQUEST_READ_EXTERNAL_STORAGE);
             return;
         }
+
+        ContentProvider.initializeDb(this);
     }
 
     @Override
