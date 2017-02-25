@@ -11,9 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import org.literacyapp.contentprovider.ContentProvider;
-import org.literacyapp.contentprovider.model.content.Word;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         ContentProvider.initializeDb(this);
 
-        List<Word> words = ContentProvider.getAllWords();
-        Log.i(getClass().getName(), "words.size(): " + words.size());
+        Intent intent = new Intent(this, ListenAndSelectActivity.class);
+        startActivity(intent);
+
+        finish();
     }
 
     @Override
