@@ -4,7 +4,7 @@ import android.content.Context;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
-import org.literacyapp.LiteracyApplication;
+import org.literacyapp.imagepicker.ImagePickerApplication;
 
 public class TtsHelper {
 
@@ -13,8 +13,8 @@ public class TtsHelper {
 
         Log.i(TtsHelper.class.getName(), "text: " + text);
 
-        LiteracyApplication literacyApplication = (LiteracyApplication) context;
-        TextToSpeech tts = literacyApplication.getTts();
+        ImagePickerApplication application = (ImagePickerApplication) context;
+        TextToSpeech tts = application.getTts();
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
     }
 }
