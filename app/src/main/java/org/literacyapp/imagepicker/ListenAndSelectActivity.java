@@ -12,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -175,6 +177,9 @@ public class ListenAndSelectActivity extends AppCompatActivity {
                     Log.i(getClass().getName(), "alt2CardView onClick");
 
                     MediaPlayerHelper.play(getApplicationContext(), R.raw.alternative_incorrect);
+
+                    Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_shake);
+                    alt2CardView.startAnimation(animation);
                 }
             });
         } else {
@@ -215,6 +220,9 @@ public class ListenAndSelectActivity extends AppCompatActivity {
                     Log.i(getClass().getName(), "alt1CardView onClick");
 
                     MediaPlayerHelper.play(getApplicationContext(), R.raw.alternative_incorrect);
+
+                    Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_shake);
+                    alt1CardView.startAnimation(animation);
                 }
             });
         }
