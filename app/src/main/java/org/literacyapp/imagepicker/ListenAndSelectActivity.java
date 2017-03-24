@@ -21,8 +21,8 @@ import org.literacyapp.contentprovider.ContentProvider;
 import org.literacyapp.contentprovider.model.content.Word;
 import org.literacyapp.contentprovider.model.content.multimedia.Audio;
 import org.literacyapp.contentprovider.model.content.multimedia.Image;
+import org.literacyapp.contentprovider.util.MultimediaHelper;
 import org.literacyapp.imagepicker.util.MediaPlayerHelper;
-import org.literacyapp.imagepicker.util.MultimediaHelper;
 import org.literacyapp.imagepicker.util.TtsHelper;
 
 import java.io.File;
