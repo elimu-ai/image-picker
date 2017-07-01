@@ -24,6 +24,7 @@ import org.literacyapp.contentprovider.model.content.multimedia.Image;
 import org.literacyapp.contentprovider.util.MultimediaHelper;
 import org.literacyapp.imagepicker.util.MediaPlayerHelper;
 import org.literacyapp.imagepicker.util.TtsHelper;
+import org.literacyapp.model.enums.content.SpellingConsistency;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -66,7 +67,7 @@ public class ListenAndSelectActivity extends AppCompatActivity {
 
         // Fetch 10 most frequent words with matching audio and image
         wordsWithMatchingAudioAndImage = new ArrayList<>();
-        List<Word> words = ContentProvider.getAllWordsOrderedByFrequency();
+        List<Word> words = ContentProvider.getAllWords(SpellingConsistency.values());
         Log.i(getClass().getName(), "words.size(): " + words.size());
         for (Word word : words) {
             Audio matchingAudio = ContentProvider.getAudio(word.getText());
