@@ -1,4 +1,4 @@
-package org.literacyapp.imagepicker.util;
+package ai.elimu.imagepicker.util;
 
 import android.content.Context;
 import android.media.MediaPlayer;

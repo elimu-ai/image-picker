@@ -1,4 +1,4 @@
-package org.literacyapp.imagepicker;
+package ai.elimu.imagepicker;
 
 import org.junit.Test;
 

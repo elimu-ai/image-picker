@@ -1,10 +1,10 @@
-package org.literacyapp.imagepicker.util;
+package ai.elimu.imagepicker.util;
 
 import android.content.Context;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
-import org.literacyapp.imagepicker.ImagePickerApplication;
+import ai.elimu.imagepicker.ImagePickerApplication;
 
 public class TtsHelper {
 
