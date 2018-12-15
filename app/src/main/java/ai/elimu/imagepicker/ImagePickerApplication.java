@@ -1,4 +1,4 @@
-package org.literacyapp.imagepicker;
+package ai.elimu.imagepicker;
 
 import android.app.Application;
 import android.speech.tts.TextToSpeech;
