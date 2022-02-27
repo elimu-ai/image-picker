@@ -1,4 +1,4 @@
-# Image Picker
+# Image Picker 🎑
 
 Android application for teaching and assessing oral vocabulary
 
