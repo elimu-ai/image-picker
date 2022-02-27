@@ -4,7 +4,7 @@ import android.app.Application;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
-public class ImagePickerApplication extends Application {
+public class BaseApplication extends Application {
 
     private TextToSpeech tts;
 

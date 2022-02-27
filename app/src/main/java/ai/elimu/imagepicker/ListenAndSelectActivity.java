@@ -1,35 +1,15 @@
 package ai.elimu.imagepicker;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.util.Log;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-//import ai.elimu.contentprovider.ContentProvider;
-//import ai.elimu.contentprovider.model.content.Word;
-//import ai.elimu.contentprovider.model.content.multimedia.Audio;
-//import ai.elimu.contentprovider.model.content.multimedia.Image;
-//import ai.elimu.contentprovider.util.MultimediaHelper;
-import ai.elimu.imagepicker.R;
-import ai.elimu.imagepicker.util.MediaPlayerHelper;
-import ai.elimu.imagepicker.util.TtsHelper;
-import ai.elimu.model.enums.content.SpellingConsistency;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
