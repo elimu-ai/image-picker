@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 32
+    namespace 'ai.elimu.imagepicker'
+    compileSdk 35
 
     defaultConfig {
         applicationId "ai.elimu.imagepicker"
-        minSdkVersion 24
-        targetSdkVersion 32
+        minSdkVersion 26
+        targetSdkVersion 35
         versionCode 2005001
         versionName "2.5.1-SNAPSHOT"
         setProperty("archivesBaseName", "${applicationId}-${versionCode}")
@@ -38,8 +39,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
