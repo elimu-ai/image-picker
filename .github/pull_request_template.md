@@ -10,6 +10,10 @@
 <!-- Are there any key aspects of the implementation to highlight? -->
 * 
 
+### Screenshots
+<!-- If this PR affects the UI, please include before/after screenshots demonstrating the change(s). -->
+*
+
 ### Testing Instructions
 <!-- How can the reviewer verify the functionality or fix introduced by this PR? Please provide steps. -->
 * 
@@ -37,7 +41,3 @@
 - [ ] I tested my changes on a 9-10" screen (▭ landscape orientation)
 
 ![](https://github.com/user-attachments/assets/8f208838-0465-4ada-bc27-67dfde8459be)
-
-### Screenshots
-<!-- If this PR affects the UI, please include before/after screenshots demonstrating the change(s). -->
-*
