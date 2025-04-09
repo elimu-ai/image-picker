@@ -40,4 +40,5 @@
 - [ ] I tested my changes on a 9-10" screen (▯ portrait orientation)
 - [ ] I tested my changes on a 9-10" screen (▭ landscape orientation)
 
-![](https://github.com/user-attachments/assets/048c8099-64c0-4952-817e-2a2b85b0dcd1)
+![](https://github.com/user-attachments/assets/4715d998-db1c-4895-b5bd-4c07c1f34758)
+
