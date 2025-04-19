@@ -42,3 +42,10 @@
 
 ![](https://github.com/user-attachments/assets/4715d998-db1c-4895-b5bd-4c07c1f34758)
 
+#### Content Tests
+<!-- Did you verify that your changes are compatible with different types of content? -->
+- [ ] I tested my changes with English content (`eng.elimu.ai`)
+- [ ] I tested my changes with Hindi content (`hin.elimu.ai`)
+- [ ] I tested my changes with Tagalog content (`tgl.elimu.ai`)
+- [ ] I tested my changes with Thai content (`tha.elimu.ai`)
+- [ ] I tested my changes with Vietnamese content (`vie.elimu.ai`)
