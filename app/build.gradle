@@ -11,7 +11,7 @@ android {
         versionCode 2005002
         versionName "2.5.2-SNAPSHOT"
         setProperty("archivesBaseName", "${applicationId}-${versionCode}")
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
