@@ -4,6 +4,9 @@
 
 Android application for teaching and assessing oral vocabulary
 
+Literacy skills:
+* [`ORAL_VOCABULARY`](https://github.com/elimu-ai/wiki/blob/main/literacy-skills/ORAL_VOCABULARY.md)
+
 <img width=480 src="https://cloud.githubusercontent.com/assets/15718174/26795524/3ec4157a-4a26-11e7-9c84-b88677dcb35c.png" />
 
 See demo at https://www.youtube.com/watch?v=LZVRIu-Tx4E
@@ -19,7 +22,7 @@ See demo at https://www.youtube.com/watch?v=LZVRIu-Tx4E
   <img src="https://github.com/elimu-ai/webapp/blob/main/src/main/webapp/static/img/logo-text-256x78.png" />
 </p>
 <p align="center">
-  elimu.ai - Free open-source learning software for out-of-school children ✨🚀
+  elimu.ai - Free open-source learning software for out-of-school children 🚀✨
 </p>
 <p align="center">
   <a href="https://elimu.ai">Website 🌐</a>
