@@ -27,8 +27,8 @@ jobs:
 
       - name: Git Config
         run: |
-          git config user.name 'Nya Ξlimu'
-          git config user.email 'info@elimu.ai'
+          git config user.name github-actions
+          git config user.email github-actions@github.com
 
       - name: Remove -SNAPSHOT from versionName
         run: ./gradlew removeSnapshot
