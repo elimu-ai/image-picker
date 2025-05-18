@@ -1,5 +1,3 @@
-[![](https://jitpack.io/v/ai.elimu/image-picker.svg)](https://jitpack.io/#ai.elimu/image-picker)
-
 # Image Picker 🎑
 
 Android application for teaching and assessing oral vocabulary
