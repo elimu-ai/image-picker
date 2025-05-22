@@ -1,28 +1,24 @@
-package ai.elimu.imagepicker;
+package ai.elimu.imagepicker
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
+import android.content.Intent
+import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        Log.i(getClass().getName(), "onCreate");
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        Log.i(javaClass.getName(), "onCreate")
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
     }
 
-    @Override
-    protected void onStart() {
-        Log.i(getClass().getName(), "onStart");
-        super.onStart();
+    override fun onStart() {
+        Log.i(javaClass.getName(), "onStart")
+        super.onStart()
 
-        Intent intent = new Intent(this, ListenAndSelectActivity.class);
-        startActivity(intent);
+        val intent = Intent(this, ListenAndSelectActivity::class.java)
+        startActivity(intent)
 
-        finish();
+        finish()
     }
 }
