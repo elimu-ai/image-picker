@@ -1,42 +1,36 @@
-package ai.elimu.imagepicker;
+package ai.elimu.imagepicker
 
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
+import android.graphics.Color
+import android.graphics.drawable.Drawable
+import android.os.Bundle
+import android.util.Log
+import android.widget.ImageView
+import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
+import java.util.regex.Pattern
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
+class ListenAndSelectActivity : AppCompatActivity() {
+    //    private List<Word> wordsWithMatchingAudioAndImage;
+    //
+    //    private List<Word> wordsCorrectlySelected;
+    private val progressBar: ProgressBar? = null
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+    private val alt1CardView: CardView? = null
+    private val alt1ImageView: ImageView? = null
 
-public class ListenAndSelectActivity extends AppCompatActivity {
+    private val alt2CardView: CardView? = null
+    private val alt2ImageView: ImageView? = null
 
-//    private List<Word> wordsWithMatchingAudioAndImage;
-//
-//    private List<Word> wordsCorrectlySelected;
+    private val defaultBackgroundDrawable: Drawable? = null
 
-    private ProgressBar progressBar;
+    override fun onCreate(savedInstanceState: Bundle?) {
+        Log.i(javaClass.getName(), "onCreate")
+        super.onCreate(savedInstanceState)
 
-    private CardView alt1CardView;
-    private ImageView alt1ImageView;
+        setContentView(R.layout.activity_listen_and_select)
 
-    private CardView alt2CardView;
-    private ImageView alt2ImageView;
-
-    private Drawable defaultBackgroundDrawable;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        Log.i(getClass().getName(), "onCreate");
-        super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_listen_and_select);
-
-//        wordsCorrectlySelected = new ArrayList<>();
+        //        wordsCorrectlySelected = new ArrayList<>();
 //
 //        progressBar = (ProgressBar) findViewById(R.id.listenAndSelectProgressBar);
 //
@@ -68,18 +62,17 @@ public class ListenAndSelectActivity extends AppCompatActivity {
 //        defaultBackgroundDrawable = getWindow().getDecorView().getBackground();
     }
 
-    @Override
-    protected void onStart() {
-        Log.i(getClass().getName(), "onStart");
-        super.onStart();
+    override fun onStart() {
+        Log.i(javaClass.getName(), "onStart")
+        super.onStart()
 
-        loadNextImage();
+        loadNextImage()
     }
 
-    private void loadNextImage() {
-        Log.i(getClass().getName(), "loadNextImage");
+    private fun loadNextImage() {
+        Log.i(javaClass.getName(), "loadNextImage")
 
-//        if (wordsCorrectlySelected.size() == wordsWithMatchingAudioAndImage.size()) {
+        //        if (wordsCorrectlySelected.size() == wordsWithMatchingAudioAndImage.size()) {
 //            // TODO: show congratulations page
 //            finish();
 //            return;
@@ -87,7 +80,7 @@ public class ListenAndSelectActivity extends AppCompatActivity {
 //
 //        // Reset background color
 //        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
-////        getWindow().getDecorView().setBackground(defaultBackgroundDrawable);
+//        getWindow().getDecorView().setBackground(defaultBackgroundDrawable);
 //        getWindow().getDecorView().setBackground(new ColorDrawable(Color.parseColor("#EEEEEE")));
 //        progressBar.setProgress(wordsCorrectlySelected.size() * 100 / wordsWithMatchingAudioAndImage.size());
 //        alt1CardView.setBackgroundColor(Color.parseColor("#FFFFFF"));
@@ -210,43 +203,41 @@ public class ListenAndSelectActivity extends AppCompatActivity {
 //        }
     }
 
-    private int parseRgbColor(String input) {
-        Pattern pattern = Pattern.compile("rgb *\\( *([0-9]+), *([0-9]+), *([0-9]+) *\\)");
-        Matcher matcher = pattern.matcher(input);
+    private fun parseRgbColor(input: String): Int {
+        val pattern = Pattern.compile("rgb *\\( *([0-9]+), *([0-9]+), *([0-9]+) *\\)")
+        val matcher = pattern.matcher(input)
         if (matcher.matches()) {
-            int rgbRed = Integer.valueOf(matcher.group(1));
-            int rgbGreen = Integer.valueOf(matcher.group(2));
-            int rgbBlue = Integer.valueOf(matcher.group(3));
-            int colorIdentifier = Color.rgb(rgbRed, rgbGreen, rgbBlue);
-            return colorIdentifier;
+            val rgbRed = matcher.group(1).toInt()
+            val rgbGreen = matcher.group(2).toInt()
+            val rgbBlue = matcher.group(3).toInt()
+            val colorIdentifier = Color.rgb(rgbRed, rgbGreen, rgbBlue)
+            return colorIdentifier
         } else {
-            return -1;
+            return -1
         }
-    }
-
-//    private void playWord(Word word) {
-//        Log.i(getClass().getName(), "playWord");
-//
-//        // Look up corresponding Audio recording
-//        Log.d(getClass().getName(), "Looking up \"" + word.getText() + "\"");
-//        Audio audio = ContentProvider.getAudio(word.getText());
-//        Log.i(getClass().getName(), "audio: " + audio);
-//        if (audio != null) {
-//            // Play audio
-//            File audioFile = MultimediaHelper.getFile(audio);
-//            Uri uri = Uri.parse(audioFile.getAbsolutePath());
-//            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
-//            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//                @Override
-//                public void onCompletion(MediaPlayer mediaPlayer) {
-//                    Log.i(getClass().getName(), "onCompletion");
-//                    mediaPlayer.release();
-//                }
-//            });
-//            mediaPlayer.start();
-//        } else {
-//            // Audio recording not found. Fall-back to TTS.
-//            TtsHelper.speak(getApplicationContext(), word.getText());
-//        }
-//    }
+    } //    private void playWord(Word word) {
+    //        Log.i(getClass().getName(), "playWord");
+    //
+    //        // Look up corresponding Audio recording
+    //        Log.d(getClass().getName(), "Looking up \"" + word.getText() + "\"");
+    //        Audio audio = ContentProvider.getAudio(word.getText());
+    //        Log.i(getClass().getName(), "audio: " + audio);
+    //        if (audio != null) {
+    //            // Play audio
+    //            File audioFile = MultimediaHelper.getFile(audio);
+    //            Uri uri = Uri.parse(audioFile.getAbsolutePath());
+    //            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
+    //            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+    //                @Override
+    //                public void onCompletion(MediaPlayer mediaPlayer) {
+    //                    Log.i(getClass().getName(), "onCompletion");
+    //                    mediaPlayer.release();
+    //                }
+    //            });
+    //            mediaPlayer.start();
+    //        } else {
+    //            // Audio recording not found. Fall-back to TTS.
+    //            TtsHelper.speak(getApplicationContext(), word.getText());
+    //        }
+    //    }
 }
