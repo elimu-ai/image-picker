@@ -15,8 +15,8 @@ android {
         applicationId "ai.elimu.imagepicker"
         minSdkVersion 26
         targetSdkVersion 35
-        versionCode 2006036
-        versionName "2.6.36"
+        versionCode 2006037
+        versionName "2.6.37-SNAPSHOT"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
