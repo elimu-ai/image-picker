@@ -4,7 +4,7 @@ material = "1.12.0"
 junit = "4.13.2"
 
 androidXJunit = "1.2.1"
-androidXEspresso = "3.6.1"
+androidXEspresso = "3.7.0"
 androidGradlePlugin = "8.6.1"
 coreKtx = "1.16.0"
 kotlin = "2.2.0"
